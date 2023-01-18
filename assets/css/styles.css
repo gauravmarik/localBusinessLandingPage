@@ -127,7 +127,7 @@ body.dark-theme {
 }
 
 .dark-theme .popular__card {
-	box-shadow: 0 8px 20px hsla(19, 64%, 4%, 0.2);
+	/* box-shadow: 0 8px 20px hsla(19, 64%, 4%, 0.2); */
 }
 
 .dark-theme .newsletter__content {
@@ -447,13 +447,13 @@ body.dark-theme {
 }
 
 .popular__card {
-	position: relative;
-	background-color: var(--container-color);
-	padding: 7rem 2rem 1.5rem;
+	/* position: relative; */
+	/* background-color: var(--container-color); */
+	/* padding: 7rem 2rem 1.5rem; */
 	/* box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08); */
-	box-shadow: 0 8px 20px hsla(19, 64%, 4%, 0.2);
+	/* box-shadow: 0 8px 20px hsla(19, 64%, 4%, 0.2); */
 
-	border-radius: 1rem;
+	/* border-radius: 1rem; */
 	text-align: center;
 	transition: background 0.4s; /* for dark mode animation */
 }
@@ -1021,7 +1021,7 @@ body.dark-theme {
 	.popular__card {
 		padding: 7.5rem 2rem 2rem;
 		/* padding: 0; */
-		border-radius: 1.5rem;
+		/* border-radius: 1.5rem; */
 		/* display: flex; */
 		/* width: 20%; */
 	}
