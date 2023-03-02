@@ -1,11 +1,11 @@
-/*=============== GOOGLE FONTS ===============*/
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
 	--header-height: 3.5rem;
 
-	/*========== Colors ==========*/
+	/* Colors */
 	/*Color mode HSL(hue, saturation, lightness)*/
 	/* --first-color: hsl(19, 64%, 54%);
 	--first-color-alt: hsl(19, 64%, 52%); */
@@ -18,7 +18,7 @@
 	--body-color: hsl(19, 100%, 96%);
 	--container-color: hsl(19, 100%, 97%);
 
-	/*========== Font and typography ==========*/
+	/* Font and typography */
 	/*.5rem = 8px | 1rem = 16px ...*/
 	--body-font: 'Montserrat', sans-serif;
 	--title-font: 'Montserrat', sans-serif;
@@ -31,11 +31,11 @@
 	--small-font-size: 0.813rem;
 	--smaller-font-size: 0.75rem;
 
-	/*========== Font weight ==========*/
+	/*Font weight */
 	--font-medium: 500;
 	--font-semi-bold: 600;
 
-	/*========== z index ==========*/
+	/* z index*/
 	--z-tooltip: 10;
 	--z-fixed: 100;
 }
@@ -51,7 +51,7 @@
 	}
 }
 
-/*=============== BASE ===============*/
+/* BASE */
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -90,7 +90,7 @@ img {
 	height: auto;
 }
 
-/*=============== THEME ===============*/
+/* THEME */
 .naav__buttons {
 	display: flex;
 	align-items: center;
@@ -102,7 +102,7 @@ img {
 	cursor: pointer;
 	transition: var(--body-color) k;
 }
-/*========== Variables Dark theme ==========*/
+/* Variables Dark theme */
 body.dark-theme {
 	/* --first-color: hsl(19, 64%, 54%);
 	--first-color-alt: hsl(19, 64%, 54%); */
@@ -115,10 +115,10 @@ body.dark-theme {
 	--container-color: hsl(19, 10%, 10%);
 }
 
-/*========== 
+/*
     Color changes in some parts of 
     the website, in light theme
-==========*/
+*/
 
 .dark-theme .bg-header,
 .dark-theme .nav__menu,
@@ -148,7 +148,7 @@ body.dark-theme {
 	background-color: hsl(19, 8%, 35%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* REUSABLE CSS CLASSES */
 .container {
 	max-width: 1024px;
 	margin-inline: 1.5rem;
@@ -186,7 +186,7 @@ body.dark-theme {
 	overflow: hidden; /* For animation ScrollReveal */
 }
 
-/*=============== HEADER & NAV ===============*/
+/* HEADER & NAV */
 .header {
 	position: fixed;
 	width: 100%;
@@ -313,7 +313,7 @@ body.dark-theme {
 	color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
+/* HOME */
 .home {
 	position: relative;
 }
@@ -373,7 +373,7 @@ body.dark-theme {
 	transform: rotate(-15deg);
 }
 
-/*=============== BUTTON ===============*/
+/* BUTTON */
 .button {
 	display: inline-flex;
 	align-items: center;
@@ -399,7 +399,7 @@ body.dark-theme {
 .button:hover i {
 	transform: translateX(0.25rem);
 }
-/*=============== ABOUT ===============*/
+/* ABOUT*/
 
 .about {
 	position: relative;
@@ -438,7 +438,7 @@ body.dark-theme {
 	transform: rotate(-15deg);
 }
 
-/*=============== POPULAR ===============*/
+/* POPULAR */
 .popular__container {
 	padding-top: 4rem;
 	grid-template-columns: 250px;
@@ -509,7 +509,7 @@ body.dark-theme {
 	transform: translateY(-0.25rem);
 	cursor: pointer;
 }
-/*=============== RECENTLY ===============*/
+/* RECENTLY */
 .recently {
 	position: relative;
 }
@@ -560,7 +560,7 @@ body.dark-theme {
 	transform: rotate(-30deg);
 }
 
-/*=============== NEWSLETTER ===============*/
+/* NEWSLETTER */
 .newsletter__container {
 	position: relative;
 }
@@ -624,7 +624,7 @@ body.dark-theme {
 	transition: background 0.4s;
 }
 
-/*=============== FOOTER ===============*/
+/* FOOTER */
 .footer {
 	position: relative;
 	padding-block: 3rem 2rem;
@@ -691,6 +691,7 @@ body.dark-theme {
 .footer__social {
 	display: flex;
 	column-gap: 1.25rem;
+	justify-content: center;
 }
 
 .footer__social-link {
@@ -726,13 +727,12 @@ body.dark-theme {
 	width: 100px;
 	opacity: 0.2;
 	position: absolute;
-	/* bottom: 6rem; */
-	/* right: -2rem; */
+
 	transform: rotate(-15deg);
 
 	right: 37rem;
 	/* left: 0; */
-	bottom: -14.5rem;
+	bottom: -24.8rem;
 	margin: 0 auto;
 	/* width: 150px; */
 }
@@ -763,7 +763,13 @@ body.dark-theme {
 	color: var(--text-color-light);
 }
 
-/*=============== SCROLL BAR ===============*/
+.footer__social__container {
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 0;
+}
+
+/* SCROLL BAR */
 ::-webkit-scrollbar {
 	width: 0.6rem;
 	border-radius: 0.5rem;
@@ -778,7 +784,7 @@ body.dark-theme {
 	background-color: hsl(19, 8%, 55%);
 }
 
-/*=============== SCROLL UP ===============*/
+/* SCROLL UP */
 .scrollup {
 	position: fixed;
 	right: 1rem;
@@ -806,7 +812,7 @@ body.dark-theme {
 	bottom: 3rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
+/* BREAKPOINTS */
 /* For small devices */
 @media screen and (max-width: 340px) {
 	.container {
@@ -1168,13 +1174,13 @@ body.dark-theme {
 	}
 }
 
-/* ======VARIABLES CSS===== */
+/* VARIABLES CSS*/
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-/* ========HOME========= */
+/* HOME */
 .home__img {
 	position: relative;
 	padding-top: 1.5rem;
@@ -1189,7 +1195,7 @@ img {
 	left: 0;
 }
 
-/* ======MEDIA QUERIES======== */
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 767px) {
 	.home__img {
